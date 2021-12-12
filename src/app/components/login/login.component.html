@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="container-left"></div>
+  <div class="container-right">
+    <div class="cover">
+      <div class="logo">
+        <div class="logo-img">
+          <span>S</span>
+        </div>
+        <p class="logo-text">Express Lands</p>
+      </div>
+      <div class="title">
+        <h1>
+          Login to <br />
+          your account
+        </h1>
+        <p>Welcome back! Please login to your account</p>
+      </div>
+      <div class="form">
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+          <div class="error-body" *ngIf="f.email.touched && f.email.invalid">
+            <div class="error-text" *ngIf="f.email.errors?.required">
+              Email is required.
+            </div>
+            <div class="error-text" *ngIf="f.email.errors?.email">
+              Please, enter a valid email address.
+            </div>
+          </div>
+          <input
+            type="email"
+            placeholder="Enter Email"
+            formControlName="email"
+          />
+          <div
+            class="error-body"
+            *ngIf="f.password.touched && f.password.invalid"
+          >
+            <div class="error-text" *ngIf="f.password.errors?.required">
+              Password is required.
+            </div>
+          </div>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            formControlName="password"
+          />
+          <button [disabled]="!loginForm.valid">LOG IN</button>
+        </form>
+        <div class="forgot-password">
+          <a routerLink="#">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
