@@ -1,3 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 .container {
-  padding: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  box-shadow: inset -10px 0px 20px rgba(194, 203, 217, 0.15);
+  height: 100vh;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.logo-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #13244e 0%, #75c5f0 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.logo-text {
+  color: #5a99c4;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.nav-list {
+  margin-bottom: 3px;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-list a {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+  color: #404040;
+  padding: 12px;
+}
+
+.svgIcon {
+  color: #b7bdcd;
+}
+
+.svgActive {
+  color: #0f9cda;
+}
+
+a:hover {
+  background: #fff;
+  border-radius: 5px;
+}
+
+a:hover p {
+  color: #133f77;
+}
+a:hover .svgIcon {
+  color: #0f9cda;
+}
+
+.active {
+  background: #fff;
+  border-radius: 5px;
+}
+
+.active p {
+  color: #133f77;
 }

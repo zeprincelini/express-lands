@@ -5,4 +5,80 @@
     </div>
     <p class="logo-text">Express Lands</p>
   </div>
+  <div class="nav-section">
+    <ul class="nav">
+      <li class="nav-list">
+        <a routerLinkActive="active" #rla="routerLinkActive" routerLink="">
+          <svg-icon
+            src="../../../assets/icons/dashboard.svg"
+            [svgStyle]="{ 'width.px': 20 }"
+            [class]="[rla.isActive ? 'svgActive' : 'svgIcon']"
+          ></svg-icon>
+          <p>Dashboard</p>
+        </a>
+      </li>
+      <li class="nav-list">
+        <a routerLinkActive="active" routerLink="#">
+          <svg-icon
+            src="../../../assets/icons/benefit.svg"
+            [svgStyle]="{ 'width.px': 20 }"
+            [class]="['svgIcon']"
+          ></svg-icon>
+          <p>Menu Item 1</p>
+        </a>
+      </li>
+      <li class="nav-list">
+        <a routerLinkActive="active" routerLink="#">
+          <svg-icon
+            src="../../../assets/icons/pensioners.svg"
+            [svgStyle]="{ 'width.px': 20 }"
+            [class]="['svgIcon']"
+          ></svg-icon>
+          <p>Menu Item 2</p>
+        </a>
+      </li>
+      <li class="nav-list">
+        <a routerLinkActive="active" routerLink="#">
+          <svg-icon
+            src="../../../assets/icons/home.svg"
+            [svgStyle]="{ 'width.px': 20 }"
+            [class]="['svgIcon']"
+          ></svg-icon>
+          <p>Menu Item 3</p>
+        </a>
+      </li>
+      <li class="nav-list">
+        <a routerLinkActive="active" routerLink="#">
+          <svg-icon
+            src="../../../assets/icons/tick.svg"
+            [svgStyle]="{ 'width.px': 20 }"
+            [class]="['svgIcon']"
+          ></svg-icon>
+          <p>Menu Item 4</p>
+        </a>
+      </li>
+      <li class="nav-list">
+        <a routerLinkActive="active" routerLink="#">
+          <svg-icon
+            src="../../../assets/icons/note.svg"
+            [svgStyle]="{ 'width.px': 20 }"
+            [class]="['svgIcon']"
+          ></svg-icon>
+          <p>Menu Item 5</p>
+        </a>
+      </li>
+    </ul>
+    <ul class="nav-lower">
+      <li class="nav-list">
+        <a routerLinkActive="active" routerLink="#">
+          <svg-icon
+            src="../../../assets/icons/users.svg"
+            [svgStyle]="{ 'width.px': 20 }"
+            [class]="['svgIcon']"
+          ></svg-icon>
+          <p>Manage Users</p>
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
