@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css'],
 })
 export class DashboardComponent implements OnInit {
-  name = localStorage.getItem('user');
+  name = JSON.parse(localStorage.getItem('user') || '{}');
   constructor() {}
 
   ngOnInit(): void {}

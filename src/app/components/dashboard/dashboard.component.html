@@ -2,5 +2,111 @@
   <div class="sidebar">
     <app-sidebar></app-sidebar>
   </div>
-  <div class="main-body">dashing</div>
+  <div class="main-body">
+    <div class="main-body-top">
+      <svg-icon
+        src="/assets/icons/menu.svg"
+        [svgStyle]="{ 'width.px': 40 }"
+        [class]="['svgIcon']"
+      ></svg-icon>
+      <div class="top-right">
+        <div class="notification">
+          <svg-icon
+            src="/assets/icons/bell.svg"
+            [svgStyle]="{ 'width.px': 30 }"
+            [class]="['svgBg']"
+          ></svg-icon>
+          <div class="text">
+            <span>Notifications Center</span>
+            <span>You have 2 unread notifications</span>
+          </div>
+          <div class="count">2</div>
+        </div>
+        <div class="user">
+          <svg-icon
+            src="/assets/icons/person.svg"
+            [svgStyle]="{ 'width.px': 35 }"
+            [class]="['svgBg']"
+          ></svg-icon>
+          <div class="name">
+            <span>Chidimma Nwanya</span>
+            <span>Vanity By Juls</span>
+          </div>
+          <div class="logout">
+            <svg-icon
+              src="/assets/icons/power.svg"
+              [svgStyle]="{ 'width.px': 20 }"
+            ></svg-icon>
+            <span> Log Out </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-section">
+      <div class="header">
+        <span class="dashboard"> Dashboard </span>
+        <div class="header-right">
+          <div class="customize">
+            <div class="customize-cover">
+              <svg-icon
+                src="/assets/icons/tool.svg"
+                [svgStyle]="{ 'width.px': 20 }"
+              ></svg-icon>
+            </div>
+            <span class="customize-text"> Customize Dashboard </span>
+          </div>
+          <svg-icon
+            src="/assets/icons/line.svg"
+            [svgStyle]="{ 'width.px': 20 }"
+          ></svg-icon>
+          <span class="date"> Mon, Jun 22, 2020 </span>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="left-card">
+          <div class="card-body">
+            <div class="close">
+              <svg-icon
+                src="/assets/icons/close.svg"
+                [svgStyle]="{ 'width.px': 20 }"
+              ></svg-icon>
+            </div>
+            <div class="card-body-text">
+              <span class="card-body-name"> Welcome back! Chidimma. </span>
+              <span class="card-body-details">
+                See overview of analytics and reporting metrics <br />
+                and a lot more interesting stuffs you can do here.
+              </span>
+            </div>
+            <button class="card-body-button">Take A Tour</button>
+          </div>
+          <svg-icon
+            src="/assets/icons/pc.svg"
+            [class]="['svgPc']"
+            [svgStyle]="{ 'width.px': 150 }"
+          ></svg-icon>
+        </div>
+        <div class="right-card">
+          <div class="card-body-right">
+            <div class="card-body-text-right">
+              <span class="card-body-name-right">
+                OPTIMIZED APPLICATION PROCESSING
+              </span>
+              <span class="card-body-details-right">
+                We’ve optimized the system to process your <br />
+                application as fast as possible. Click on the button <br />
+                below to get started.
+              </span>
+            </div>
+            <button class="card-body-button-right">Take A Tour</button>
+          </div>
+          <svg-icon
+            src="/assets/icons/screen.svg"
+            [class]="['svgScreen']"
+            [svgStyle]="{ 'width.px': 150 }"
+          ></svg-icon>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
