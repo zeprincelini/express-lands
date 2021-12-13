@@ -29,10 +29,10 @@
             [class]="['svgBg']"
           ></svg-icon>
           <div class="name">
-            <span>Chidimma Nwanya</span>
+            <span style="text-transform: capitalize">{{ name.username }}</span>
             <span>Vanity By Juls</span>
           </div>
-          <div class="logout">
+          <div class="logout" (click)="logout()">
             <svg-icon
               src="/assets/icons/power.svg"
               [svgStyle]="{ 'width.px': 20 }"
@@ -59,7 +59,7 @@
             src="/assets/icons/line.svg"
             [svgStyle]="{ 'width.px': 20 }"
           ></svg-icon>
-          <span class="date"> Mon, Jun 22, 2020 </span>
+          <span class="date">{{ today | date: "fullDate" }} </span>
         </div>
       </div>
       <div class="cards">
@@ -237,58 +237,60 @@
           </div>
         </div>
         <div class="budget-cards">
-          <div class="budget-cards-top">
+          <div class="budget-cards-top" style="padding-left: 10px">
             <span class="card-count">Cards Count</span>
           </div>
-          <div class="summary-count">Summary</div>
-          <div class="budget-cards-mid">
-            <div class="chat">
-              <svg-icon
-                src="/assets/icons/chat.svg"
-                [svgStyle]="{ 'width.px': 40 }"
-                [class]="['svgChat']"
-              ></svg-icon>
-            </div>
-            <div class="chat-percent">80%</div>
-            <circle-progress
-              [percent]="80"
-              [space]="-10"
-              [radius]="60"
-              [title]="assets"
-              [titleColor]="color_assets"
-              [outerStrokeWidth]="10"
-              [innerStrokeWidth]="10"
-              [outerStrokeColor]="'#F6AE2D'"
-              [innerStrokeColor]="'#FFFBF5'"
-              [animation]="true"
-              [animationDuration]="1000"
-            ></circle-progress>
-          </div>
-          <div class="budget-cards-bottom-count">
-            <div class="budget-cost">
-              <div class="budget-cost-left">
-                <p style="color: #fff">Total Cards</p>
-                <p style="color: #fff">392,383</p>
+          <div class="summary-count" style="padding-left: 10px">Summary</div>
+          <div class="wrapper-bottom">
+            <div class="budget-cards-mid">
+              <div class="chat">
+                <svg-icon
+                  src="/assets/icons/chat.svg"
+                  [svgStyle]="{ 'width.px': 40 }"
+                  [class]="['svgChat']"
+                ></svg-icon>
               </div>
-              <div class="budget-cost-right">
-                <div class="spent">
-                  <div class="dot-count-1"></div>
-                  <p style="color: #fff">In-use</p>
+              <div class="chat-percent">80%</div>
+              <circle-progress
+                [percent]="80"
+                [space]="-10"
+                [radius]="60"
+                [title]="assets"
+                [titleColor]="color_assets"
+                [outerStrokeWidth]="10"
+                [innerStrokeWidth]="10"
+                [outerStrokeColor]="'#F6AE2D'"
+                [innerStrokeColor]="'#FFFBF5'"
+                [animation]="true"
+                [animationDuration]="1000"
+              ></circle-progress>
+            </div>
+            <div class="budget-cards-bottom-count">
+              <div class="budget-cost">
+                <div class="budget-cost-left">
+                  <p style="color: #fff">Total Cards</p>
+                  <p style="color: #fff">392,383</p>
                 </div>
-                <div class="balance">
-                  <div class="dot-count-2"></div>
+                <div class="budget-cost-right">
+                  <div class="spent">
+                    <div class="dot-count-1"></div>
+                    <p style="color: #fff">In-use</p>
+                  </div>
+                  <div class="balance">
+                    <div class="dot-count-2"></div>
+                    <p style="color: #fff">In-active</p>
+                  </div>
+                </div>
+              </div>
+              <div class="budget-cost">
+                <div class="budget-cost-left">
+                  <p style="color: #fff">Cards In-use</p>
+                  <p style="color: #fff">382,283</p>
+                </div>
+                <div class="budget-cost-right-2">
                   <p style="color: #fff">In-active</p>
+                  <p style="color: #fff">50,000</p>
                 </div>
-              </div>
-            </div>
-            <div class="budget-cost">
-              <div class="budget-cost-left">
-                <p style="color: #fff">Cards In-use</p>
-                <p style="color: #fff">382,283</p>
-              </div>
-              <div class="budget-cost-right-2">
-                <p style="color: #fff">In-active</p>
-                <p style="color: #fff">50,000</p>
               </div>
             </div>
           </div>

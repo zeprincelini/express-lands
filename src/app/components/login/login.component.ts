@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   loginForm = this.fb.group({
-    email: ['', [Validators.email, Validators.required]],
+    username: ['', [Validators.required]],
     password: ['', [Validators.required]],
   });
 
@@ -22,11 +22,8 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    // const data = new FormData();
-    // data.append('email', this.loginForm.value.email);
-    // data.append('password', this.loginForm.value.password);
     const data = {
-      email: this.loginForm.value.email,
+      username: this.loginForm.value.username,
       password: this.loginForm.value.password,
     };
     localStorage.setItem('user', JSON.stringify(data));

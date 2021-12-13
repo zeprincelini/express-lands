@@ -12,7 +12,11 @@
 .container-left {
   flex: 7;
   height: 100vh;
-  background-color: #000;
+  background: linear-gradient(147.87deg, #133f77 26.36%, #0f9cda 125.59%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
 .container-right {
