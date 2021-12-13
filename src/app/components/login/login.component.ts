@@ -26,7 +26,6 @@ export class LoginComponent implements OnInit {
     this.loading = true;
     const data = {
       username: this.loginForm.value.username,
-      password: this.loginForm.value.password,
     };
     localStorage.setItem('user', JSON.stringify(data));
     setTimeout(() => {
