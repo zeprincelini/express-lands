@@ -45,7 +45,9 @@
             placeholder="Enter Password"
             formControlName="password"
           />
-          <button [disabled]="!loginForm.valid">LOG IN</button>
+          <button [disabled]="!loginForm.valid">
+            {{ loading ? "..." : "LOG IN" }}
+          </button>
         </form>
         <div class="forgot-password">
           <a routerLink="#">Forgot Password?</a>

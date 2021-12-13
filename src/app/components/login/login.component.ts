@@ -11,6 +11,7 @@ export class LoginComponent implements OnInit {
   constructor(private fb: FormBuilder, private router: Router) {}
 
   ngOnInit(): void {}
+  loading = false;
 
   loginForm = this.fb.group({
     username: ['', [Validators.required]],
@@ -22,11 +23,14 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
+    this.loading = true;
     const data = {
       username: this.loginForm.value.username,
       password: this.loginForm.value.password,
     };
     localStorage.setItem('user', JSON.stringify(data));
-    this.router.navigate(['/']);
+    setTimeout(() => {
+      this.router.navigate(['/']);
+    }, 1000);
   }
 }
