@@ -107,6 +107,193 @@
           ></svg-icon>
         </div>
       </div>
+      <div class="budget">
+        <div class="budget-cards">
+          <div class="budget-cards-top">
+            <span class="annual">Annual Play Budget</span>
+            <div class="dropdown">
+              <span style="font-size: 12px">This Year</span>
+              <svg-icon
+                src="/assets/icons/down.svg"
+                [class]="['svgDown']"
+                [svgStyle]="{ 'width.px': 18 }"
+              ></svg-icon>
+            </div>
+          </div>
+          <div class="summary">Summary</div>
+          <div class="budget-cards-mid">
+            <div class="chat">
+              <svg-icon
+                src="/assets/icons/chat.svg"
+                [svgStyle]="{ 'width.px': 40, color: '#19304D' }"
+              ></svg-icon>
+            </div>
+            <div class="chat-percent">64%</div>
+            <circle-progress
+              [percent]="30"
+              [space]="-10"
+              [radius]="60"
+              [title]="capex"
+              [titleColor]="color"
+              [outerStrokeWidth]="10"
+              [innerStrokeWidth]="10"
+              [outerStrokeColor]="'#1B5BAC'"
+              [innerStrokeColor]="'#E2EDF8'"
+              [animation]="true"
+              [animationDuration]="1000"
+            ></circle-progress>
+          </div>
+          <div class="budget-cards-bottom">
+            <div class="budget-cost">
+              <div class="budget-cost-left">
+                <p>Total Play (NGN)</p>
+                <p>50,000,000</p>
+              </div>
+              <div class="budget-cost-right">
+                <div class="spent">
+                  <div class="dot-play-1"></div>
+                  <p>Total Spent</p>
+                </div>
+                <div class="balance">
+                  <div class="dot-play-2"></div>
+                  <p>Balance</p>
+                </div>
+              </div>
+            </div>
+            <div class="budget-cost">
+              <div class="budget-cost-left">
+                <p>Total Spent (NGN)</p>
+                <p>18,000,000</p>
+              </div>
+              <div class="budget-cost-right-2">
+                <p>Balance (NGN)</p>
+                <p>32,000,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="budget-cards">
+          <div class="budget-cards-top">
+            <span class="annual">Annual Work Budget</span>
+            <div class="dropdown">
+              <span style="font-size: 12px">This Year</span>
+              <svg-icon
+                src="/assets/icons/down.svg"
+                [class]="['svgDown']"
+                [svgStyle]="{ 'width.px': 18 }"
+              ></svg-icon>
+            </div>
+          </div>
+          <div class="summary">Summary</div>
+          <div class="budget-cards-mid">
+            <div class="chat-two">
+              <svg-icon
+                src="/assets/icons/chat2.svg"
+                [svgStyle]="{ 'width.px': 40 }"
+              ></svg-icon>
+            </div>
+            <div class="chat-percent-two">50%</div>
+            <circle-progress
+              [percent]="50"
+              [space]="-10"
+              [radius]="60"
+              [title]="opex"
+              [titleColor]="color"
+              [outerStrokeWidth]="10"
+              [innerStrokeWidth]="10"
+              [outerStrokeColor]="'#FF6542'"
+              [innerStrokeColor]="'#F8E9E2'"
+              [animation]="true"
+              [animationDuration]="1000"
+            ></circle-progress>
+          </div>
+          <div class="budget-cards-bottom-work">
+            <div class="budget-cost">
+              <div class="budget-cost-left">
+                <p>Total Work (NGN)</p>
+                <p>20,000,000</p>
+              </div>
+              <div class="budget-cost-right">
+                <div class="spent">
+                  <div class="dot-work-1"></div>
+                  <p>Total Spent</p>
+                </div>
+                <div class="balance">
+                  <div class="dot-work-2"></div>
+                  <p>Balance</p>
+                </div>
+              </div>
+            </div>
+            <div class="budget-cost">
+              <div class="budget-cost-left">
+                <p>Total Spent (NGN)</p>
+                <p>10,000,000</p>
+              </div>
+              <div class="budget-cost-right-2">
+                <p>Balance (NGN)</p>
+                <p>10,000,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="budget-cards">
+          <div class="budget-cards-top">
+            <span class="card-count">Cards Count</span>
+          </div>
+          <div class="summary-count">Summary</div>
+          <div class="budget-cards-mid">
+            <div class="chat">
+              <svg-icon
+                src="/assets/icons/chat.svg"
+                [svgStyle]="{ 'width.px': 40 }"
+                [class]="['svgChat']"
+              ></svg-icon>
+            </div>
+            <div class="chat-percent">80%</div>
+            <circle-progress
+              [percent]="80"
+              [space]="-10"
+              [radius]="60"
+              [title]="assets"
+              [titleColor]="color_assets"
+              [outerStrokeWidth]="10"
+              [innerStrokeWidth]="10"
+              [outerStrokeColor]="'#F6AE2D'"
+              [innerStrokeColor]="'#FFFBF5'"
+              [animation]="true"
+              [animationDuration]="1000"
+            ></circle-progress>
+          </div>
+          <div class="budget-cards-bottom-count">
+            <div class="budget-cost">
+              <div class="budget-cost-left">
+                <p style="color: #fff">Total Cards</p>
+                <p style="color: #fff">392,383</p>
+              </div>
+              <div class="budget-cost-right">
+                <div class="spent">
+                  <div class="dot-count-1"></div>
+                  <p style="color: #fff">In-use</p>
+                </div>
+                <div class="balance">
+                  <div class="dot-count-2"></div>
+                  <p style="color: #fff">In-active</p>
+                </div>
+              </div>
+            </div>
+            <div class="budget-cost">
+              <div class="budget-cost-left">
+                <p style="color: #fff">Cards In-use</p>
+                <p style="color: #fff">382,283</p>
+              </div>
+              <div class="budget-cost-right-2">
+                <p style="color: #fff">In-active</p>
+                <p style="color: #fff">50,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
